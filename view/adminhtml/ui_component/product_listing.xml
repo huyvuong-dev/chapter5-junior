@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="product_columns" class="Magento\Catalog\Ui\Component\Listing\Columns">
+        <column name="sample_customer_group" sortOrder="300" component="Magento_Ui/js/grid/columns/select" class="Magenest\Chapter5\Ui\Component\Listing\Columns\CustomerGroup">
+            <settings>
+                <options class="Magenest\Chapter5\Model\Product\Attribute\Source\AddCustomerGroup"/>
+                <addField>true</addField>
+                <filter>select</filter>
+                <dataType>select</dataType>
+                <label translate="true">Customer Group</label>
+            </settings>
+        </column>
+    </columns>
+</listing>
